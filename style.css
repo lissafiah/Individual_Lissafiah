@@ -1,0 +1,465 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+/*--------NAVIGATOR BAR---------*/
+.navbar {
+  overflow: hidden;
+  background-color: #303437;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+.navbar a:hover {
+  background-color: dimgray;
+}
+
+.logo {
+/*  width: 30%;*/
+  float: right;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+/*------INDEX HTML----------*/
+
+.header {
+  padding: 300px;
+  text-align: center;
+  background-image: url(images/banner1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+.nextbutton {
+  color: white;
+  position: center;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  border: solid 2px tan;
+  border-radius: 30px;
+  padding: 10px 40px;
+  margin-bottom: 20px;
+}
+
+.nextbutton:hover {background-color: tan;}
+
+.main {
+margin: 0px;
+padding: 10px;
+}
+
+#biodata {
+  height: 1000px;
+  background-color: #D1D0CE;
+}
+
+#education {
+  height: 1900px;
+  background-color: #D1D0CE;
+}
+
+#experience {
+  height: 1400px;
+  background-color: #D1D0CE;
+}
+
+#family {
+  height: 1200px;
+  background-color:  #D1D0CE;
+}
+
+
+
+/*------BIODATA-------*/
+
+.text-heading {
+  color: whitesmoke;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
+
+.text-heading2 {
+  color: whitesmoke;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 2rem;
+}
+.text-paragraph {
+  color: black;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 2rem;
+}
+
+.pictureround {
+  border-radius: 7000px;
+  align-content: center;
+  text-align: center;
+}
+
+ul { display: inline-block;}
+
+.box {
+  background-color: white;
+  width: 700px;
+  align: center;
+  padding: 50px;
+  height: 450px;
+  margin: auto;
+}
+
+/*-------EDUCATION & EXPERIENCE------*/
+
+.border-heading {
+  display: block;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  margin-right: 350px;
+  margin-left: 350px;
+  border-bottom: 1px solid #e0e0e0;
+  color: whitesmoke;
+}
+
+.text_eduH3 {
+  text-align: left;
+  padding-top: 30px;
+  margin-right: 400px;
+  margin-left: 400px;
+}
+
+.text_eduparagraph {
+  text-align: left;
+  padding-bottom: 30px;
+  margin-right: 400px;
+  margin-left: 400px;
+}
+
+
+
+/*------FAMILY SECTION-------*/
+
+.familycontainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.familyimg {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.familycontainer:hover .familyimg img {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+
+.text {
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay {
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    background-color: #008cba;
+}
+.familycontainer:hover .overlay,.familycontainer:hover .overlayFade {
+    opacity: 1;
+}
+
+.overlayTop{
+    width: 100%;
+    height: 0;
+    top:0;
+    left:0;
+    background-color: whitesmoke;
+}
+.overlayBottom{
+    width: 100%;
+    height: 0;
+    bottom:0;
+    left:0;
+    background-color: whitesmoke;
+}
+.familycontainer:hover .overlayTop ,.familycontainer:hover .overlayBottom {
+    height: 100%;
+}
+
+.familybox {
+  background-color: white;
+  width: 800px;
+  align: center;
+  padding: 50px;
+  height: 750px;
+  margin: auto;
+}
+
+/*--------FOOTER--------*/
+.footer {
+  padding: 50px;
+  text-align: center;
+  background: #333;
+}
+
+
+.text-footer {
+  text-align: center;
+  padding: 1px 0;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.social-icon {
+  color: #aaaaaa;
+  transition: colour 0.2s;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-icon:hover {
+  color: white;
+}
+
+
+.topbutton {
+  position: fixed;
+  width: 50px;
+  height: 45px;
+  background: dimgray;
+  bottom: 40px;
+  right: 50px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+
+
+
+
+/*-----GALLERY HTML------*/
+
+.img_gallery {
+  width: 100%;
+  max-width: 950px;
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+  grid-gap: 15px;
+}
+
+.img_gallery .gallery-box {
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+}
+
+.img_gallery .gallery-box:nth-child(7n + 1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.img_gallery .gallery-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.img_gallery .gallery-box:hover img {
+  transform: scale(1.1);
+}
+
+.img_gallery .gallery-box .overlay {
+  position: absolute;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.img_gallery .gallery-box:hover .overlay {
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  opacity: 1;
+}
+
+.img_gallery .gallery-box .details {
+  text-align: center;
+}
+
+.img_gallery .gallery-box .details .title {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  top: -5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.img_gallery .gallery-box .details .category {
+  font-size: 15px;
+  font-weight: 400;
+  position: relative;
+  bottom: -5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.img_gallery .gallery-box:hover .details .title {
+  top: 0px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s 0.2s ease;
+}
+
+.img_gallery .gallery-box:hover .details .category {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s 0.2s ease;
+}
+
+.img_gallery .gallery-box .details .title a,
+.img_gallery .gallery-box .details .category a {
+  color: #222222;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+.img_gallery {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+}
+
+.img_gallery .gallery-box:nth-child(7n + 1) {
+  grid-row: unset;
+  grid-column: unset;
+}
+
+}
+
+
+
+/*--------CONTACT FORM-------*/
+.contact h1 {
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 70px;
+}
+
+.contactform {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contactform_text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 15px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: whitesmoke;
+}
+
+.contactform_text:focus {
+  box-shadow: 0 0 10px 4px dimgray;
+}
+
+textarea {
+  height: 300px;
+}
+
+.contactform_button {
+  float: right;
+  border: 0;
+  background-color: whitesmoke;
+  color: #111;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contactform_button:hover {
+  background-color: #333;
+}
